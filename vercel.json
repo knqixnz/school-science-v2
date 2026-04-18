@@ -1,15 +1,13 @@
 {
   "version": 2,
-  "builds": [
+  "buildCommand": null,
+  "installCommand": "npm install",
+  "outputDirectory": ".",
+  "framework": null,
+  "rewrites": [
     {
-      "src": "index.js",
-      "use": "@vercel/node"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "index.js"
+      "source": "/(.*)",
+      "destination": "/index.js"
     }
   ]
 }
